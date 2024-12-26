@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar Restaurante Estación</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Iconos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Bar Restaurante Estación</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Carta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carrusel -->
+    <section id="carousel" class="my-4">
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image1.jpg" class="d-block w-100" alt="Plato especial" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bienvenidos</h5>
+              <p>Disfruta de la mejor experiencia culinaria en Lora del Río.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image2.jpg" class="d-block w-100" alt="Ambiente único" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ambiente Único</h5>
+              <p>Perfecto para reuniones con amigos y familia.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image3.jpg" class="d-block w-100" alt="Nuestros vinos" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vinos Exclusivos</h5>
+              <p>Acompaña tu comida con una excelente selección de vinos.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4 text-prussian-blue">Contacto</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!..."
+              class="w-100 h-100 rounded"
+              style="min-height: 300px; border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="col-12 col-md-6">
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i
+              ><strong>Dirección:</strong>
+              Avenida de Portugal Nº 7, Lora del Río, Sevilla
+            </p>
+            <p>
+              <i class="fas fa-phone-alt me-2"></i
+              ><strong>Teléfono:</strong> +686 114 172
+            </p>
+            <p>
+              <i class="fas fa-envelope me-2"></i
+              ><strong>Email:</strong> contacto@laestacion.com
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/la_estacion_bar_restaurante?igsh=ZDFsYm1rMzFsODRh"
+                class="btn btn-primary"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="btn btn-primary"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-paynes-gray text-eggshell py-3">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Bar Restaurante Estación</p>
+      </div>
+    </footer>
+  </body>
+</html>
