@@ -6,10 +6,10 @@
   --silver-lake-blue: #748cabff;
   --eggshell: #f0ebd8ff;
   --light-gray: #e0e0e0;
-  --accent-color: #f4a261; /* Nuevo color para acentos */
+  --accent-color: #f4a261; /* Color para detalles y acentos */
 }
 
-/* Estilos Básicos */
+/* Estilos básicos */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -62,15 +62,20 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Diseño del Menú */
-#menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2em;
+/* Indicador T 1/2 R */
+.section-indicator {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  background-color: var(--silver-lake-blue);
+  padding: 0.2em 0.6em;
+  border-radius: 5px;
 }
 
+/* Diseño del Menú */
 .menu-section {
   position: relative;
+  margin-bottom: 3em;
 }
 
 .section-header {
@@ -89,57 +94,57 @@ main {
   padding-bottom: 0.5em;
 }
 
-.labels {
-  text-align: right;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--prussian-blue);
-}
-
 .menu-items {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
+  flex-wrap: wrap;
+  gap: 1.5em;
 }
 
 .menu-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 1.1rem;
-  padding: 0.8em;
-  border: 1px solid var(--light-gray);
-  border-radius: 5px;
+  text-align: center;
+  flex: 1 1 calc(50% - 1.5em);
+}
+
+/* Tarjetas de menú */
+.card {
   background: var(--eggshell);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  padding: 1em;
 }
 
-.menu-item:hover {
+.card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.menu-item ul {
-  margin: 0.5em 0 0;
-  padding-left: 1.5em;
+.card-title {
+  font-size: 1.2rem;
+  color: var(--prussian-blue);
+  margin-bottom: 0.5em;
+}
+
+.card-text {
   font-size: 0.9rem;
   color: var(--silver-lake-blue);
 }
 
-.menu-item ul li {
-  list-style-type: disc;
-}
-
-.menu-item span {
+.card-price {
+  font-size: 1.1rem;
+  color: var(--accent-color);
   font-weight: bold;
-  color: var(--prussian-blue);
+  margin-top: 0.5em;
 }
 
 /* Diseño adaptable */
 @media (max-width: 768px) {
-  #menu-grid {
-    grid-template-columns: 1fr;
+  .menu-item {
+    flex: 1 1 100%;
   }
 
   .section-header h2 {
