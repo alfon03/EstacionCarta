@@ -190,3 +190,7 @@ footer p {
 #goToTop:hover {
   background-color: var(--old-gold); /* Color dorado al pasar el ratón */
 }
+
+#reservas {
+  background-color: var(--slate-gray);
+}

@@ -20,8 +20,12 @@
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="shortcut icon" href="./img/Logo/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
   </head>
-  <body>
+  <body id="top">
     <!-- Header -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-prussian-blue">
@@ -173,26 +177,65 @@
       </div>
     </section>
 
-    <section id="reservas" class="py-5 bg-light">
+    <!-- Reservas -->
+    <section id="reservas" class="py-5">
       <div class="container text-center">
         <h2 class="mb-4">Reservas</h2>
         <p>Llámanos o envíanos un mensaje para reservar tu mesa.</p>
-        <div class="d-flex justify-content-center gap-3">
-          <a href="tel:+34686114172" class="btn btn-success"
-            ><i class="fas fa-phone-alt"></i> Reservar por Teléfono</a
-          >
-          <a
-            href="https://wa.me/34686114172"
-            target="_blank"
-            class="btn btn-primary"
-            ><i class="fab fa-whatsapp"></i> Reservar por WhatsApp</a
-          >
+        <!-- Botón que abre el modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#reservasModal"
+        >
+          <i class="fas fa-calendar-alt"></i> Reservar
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="reservasModal"
+        tabindex="-1"
+        aria-labelledby="reservasModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="reservasModalLabel">
+                Opciones de Reserva
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p>Elige una opción para realizar tu reserva:</p>
+              <div class="d-grid gap-3">
+                <a href="tel:+34686114172" class="btn btn-success">
+                  <i class="fas fa-phone-alt"></i> Reservar por Teléfono
+                </a>
+                <a
+                  href="https://wa.me/34686114172"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  <i class="fab fa-whatsapp"></i> Reservar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Sección de Contacto -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
       <div class="container">
         <h2 class="text-center mb-4">Contacto</h2>
         <div class="row g-4">
@@ -238,6 +281,11 @@
         </div>
       </div>
     </section>
+    <!-- Subir arriba -->
+
+    <a href="#top" id="goToTop" class="btn btn-primary" style="display: none"
+      ><span class="material-symbols-outlined"> arrow_upward </span></a
+    >
 
     <!-- Footer -->
     <footer class="bg-dark text-light py-3">
