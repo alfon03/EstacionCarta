@@ -20,27 +20,20 @@
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="shortcut icon" href="./img/Logo/logo.png" type="image/x-icon" />
-
-    <!-- Bootstrap JS Bundle -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-prussian-blue">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
             <img
               src="./img/Logo/logo.png"
               alt="Logo"
-              width="80"
-              height="80"
-              class="me-2"
+              class="logo img-fluid me-2"
             />
-            <span>Bar Restaurante Estación</span>
+            <span class="d-none d-lg-inline">Bar Restaurante Estación</span>
+            <span class="d-lg-none">La Estación</span>
           </a>
           <button
             class="navbar-toggler"
@@ -59,17 +52,16 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link active" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./layaout/menu.html">Carta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#typical-dishes"
-                  >Nuestros Platos Típicos</a
-                >
+                <a class="nav-link" href="./layaout/platos.html">Platos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reservas">Reservas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contacto</a>
@@ -181,6 +173,24 @@
       </div>
     </section>
 
+    <section id="reservas" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Reservas</h2>
+        <p>Llámanos o envíanos un mensaje para reservar tu mesa.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="tel:+34686114172" class="btn btn-success"
+            ><i class="fas fa-phone-alt"></i> Reservar por Teléfono</a
+          >
+          <a
+            href="https://wa.me/34686114172"
+            target="_blank"
+            class="btn btn-primary"
+            ><i class="fab fa-whatsapp"></i> Reservar por WhatsApp</a
+          >
+        </div>
+      </div>
+    </section>
+
     <!-- Sección de Contacto -->
     <section id="contact" class="py-5 bg-light">
       <div class="container">
@@ -215,7 +225,9 @@
               <a href="#" class="btn btn-primary"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a href="#" class="btn btn-primary"
+              <a
+                href="https://www.instagram.com/la_estacion_bar_restaurante/?igsh=ZDFsYm1rMzFsODRh"
+                class="btn btn-primary"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a href="#" class="btn btn-primary"
@@ -233,6 +245,11 @@
         <p class="mb-0">&copy; 2024 Bar Restaurante Estación</p>
       </div>
     </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
     <script src="./assets/script/script.js"></script>
   </body>
 </html>

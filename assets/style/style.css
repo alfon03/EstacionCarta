@@ -1,4 +1,16 @@
 /* style.css */
+:root {
+  --old-gold: #d9ba22ff;
+  --seasalt: #f8f9faff;
+  --antiflash-white: #e9ecefff;
+  --platinum: #dee2e6ff;
+  --french-gray: #ced4daff;
+  --french-gray-2: #adb5bdff;
+  --slate-gray: #6c757dff;
+  --outer-space: #495057ff;
+  --onyx: #343a40ff;
+  --eerie-black: #212529ff;
+}
 
 /* Reset básico */
 body {
@@ -7,25 +19,25 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: var(--onyx);
 }
 
 header .navbar {
-  background-color: #333;
+  background-color: var(--onyx);
 }
 
 header .navbar-brand span {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: var(--seasalt);
 }
 
 header .nav-link {
-  color: white;
+  color: var(--seasalt);
 }
 
 header .nav-link:hover {
-  color: #f9a825;
+  color: var(--old-gold);
 }
 
 /* Estilo del carrusel */
@@ -40,16 +52,15 @@ header .nav-link:hover {
 /* Collage de imágenes */
 .grid-container {
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  padding: 10px;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid-container img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -57,6 +68,15 @@ header .nav-link:hover {
 .grid-container img:hover {
   transform: scale(1.05);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Modal para ampliar imágenes */
@@ -83,7 +103,7 @@ header .nav-link:hover {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: white;
+  color: var(--seasalt);
   font-size: 2rem;
   cursor: pointer;
   background: none;
@@ -91,16 +111,82 @@ header .nav-link:hover {
 }
 
 .image-modal .close-modal:hover {
-  color: #f9a825;
+  color: var(--old-gold);
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--onyx);
+  color: var(--seasalt);
   text-align: center;
 }
 
 footer p {
   margin: 0;
+}
+
+/* Tamaño del logo en pantallas grandes */
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Tamaño del logo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .logo {
+    width: 30px;
+  }
+
+  .navbar-brand span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.btn-primary {
+  background-color: var(--outer-space);
+  color: var(--seasalt);
+  border-color: var(--eerie-black);
+}
+
+.btn-primary:hover {
+  background-color: var(--old-gold);
+  border-color: var(--old-gold);
+}
+
+.nav-link {
+  color: #000; /* Color inicial del texto */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--old-gold); /* Color al pasar el ratón */
+}
+
+#active {
+  background-color: var(--eerie-black); /* Fondo para enlace activo */
+  color: white; /* Texto blanco */
+}
+
+#goToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: var(--eerie-black); /* Fondo */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 50%; /* Botón redondo */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#goToTop:hover {
+  background-color: var(--old-gold); /* Color dorado al pasar el ratón */
 }
