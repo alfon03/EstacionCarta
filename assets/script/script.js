@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Seleccionar todas las imágenes dentro de las secciones del menú
   const images = document.querySelectorAll(
-    "#typical-dishes img, #para-comenzar img, #bebidas img, #para-seguir-picando img, #guisos img, #y-para-rematar img, .menu-grid .menu-item img"
+    "#typical-dishes img, #para-comenzar img, #bebidas img, #para-seguir-picando img, #para-comer img, #guisos img, #y-para-rematar img, .menu-grid .menu-item img"
   );
   const modal = document.getElementById("imageModal");
   const modalImage = document.getElementById("modalImage");
@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Eliminar el id="active" de todos los enlaces
       navLinks.forEach((nav) => nav.removeAttribute("id"));
 
-      // Asignar id="active" solo al enlace actual
       link.setAttribute("id", "active");
     });
   });
