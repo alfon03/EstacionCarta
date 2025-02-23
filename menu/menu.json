@@ -1,0 +1,111 @@
+{
+    "para-comenzar": [
+      {
+        "nombre": "Jamón Ibérico",
+        "precio": "T: 4€ | 1/2: 7€ | R: 13€",
+        "imagen": "../img/menu/jamon-iberico.jpg"
+      },
+      {
+        "nombre": "Queso Curado",
+        "precio": "T: 3.5€ | 1/2: 7€ | R: 13€",
+        "imagen": "../img/menu/queso-curado.jpg"
+      },
+      {
+        "nombre": "Chicharrones de la Casa",
+        "precio": "Plato Único: 3€",
+        "imagen": "../img/menu/chicharrones.jpg"
+      },
+      {
+        "nombre": "Ensaladilla de Gambas y Gulas al Ajillo",
+        "precio": "T: 4€ | 1/2: 8€",
+        "imagen": "../img/platos/Ensaladilla.jpg"
+      }
+    ],
+    "guisos": [
+      {
+        "nombre": "De carne con tomate",
+        "precio": "T: 4€ | 1/2: 8€",
+        "imagen": "../img/menu/carne-tomate.jpg"
+      },
+      {
+        "nombre": "De albóndigas con mojo picón",
+        "precio": "T: 4€ | 1/2: 8€",
+        "imagen": "../img/menu/albondigas-mojo.jpg"
+      },
+      {
+        "nombre": "De costilla macerada 'a la antigua'",
+        "precio": "T: 4€ | 1/2: 8€",
+        "imagen": "../img/menu/costilla-antigua.jpg"
+      },
+      {
+        "nombre": "De carrillada al oloroso",
+        "precio": "T: 4€ | 1/2: 8€",
+        "imagen": "../img/menu/carrillada-oloroso.jpg"
+      },
+      {
+        "nombre": "De merluza con pimientos morrones",
+        "precio": "T: 4€ | 1/2: 8€",
+        "imagen": "../img/menu/merluza-pimientos.jpg"
+      },
+      {
+        "nombre": "De espinaca con garbanzos",
+        "precio": "Plato Único: 4€",
+        "imagen": "../img/platos/espinacas.jpg"
+      }
+    ],
+    "y-para-rematar": [
+      {
+        "nombre": "Red Velvet",
+        "precio": "Postre: 4.5€",
+        "imagen": "../img/menu/red-velvet.jpg"
+      },
+      {
+        "nombre": "Pastel de Zanahoria",
+        "precio": "Postre: 4.5€",
+        "imagen": "../img/menu/pastel-zanahoria.jpg"
+      },
+      {
+        "nombre": "Carmela",
+        "precio": "Postre: 4.5€",
+        "imagen": "../img/menu/carmela.jpg"
+      }
+    ],
+    "bebidas": [
+      {
+        "nombre": "Refrescos",
+        "precio": "1.8€",
+        "imagen": "https://media.istockphoto.com/id/887380068/es/vector/botellas-de-refrescos.jpg?s=612x612&w=0&k=20&c=bvVYEIm6zQoyNNIMYNJVszJvT6-UfLyKybyKeUQ6CUI="
+      },
+      {
+        "nombre": "Caña Barril",
+        "precio": "1.5€",
+        "imagen": "https://candilon.es/wp-content/uploads/2023/04/como-tirar-la-cana-cerveza-perfecta.png"
+      },
+      {
+        "nombre": "Cerveza Tercio",
+        "precio": "2€",
+        "imagen": "https://tucervezaadomicilio.com/wp-content/uploads/2020/07/estrella-galicia-quinto.jpg"
+      },
+      {
+        "nombre": "Cerveza Sin Gluten",
+        "precio": "2€",
+        "imagen": "https://estrellagalicia.es/adobe/dynamicmedia/deliver/dm-aid--66ce92d4-06aa-47f7-9e03-d85fc2794d3d/img-product-estrella-galicia-sin-gluten-es.png?preferwebp=true&quality=85"
+      },
+      {
+        "nombre": "Combinado",
+        "precio": "6€ | 7€ con Energetica (Red Bull / Blue Camaleon)",
+        "imagen": "https://www.massegur.com/wp-content/uploads/productos/productos%20(19)/0785219.bmp"
+      },
+      {
+        "nombre": "Vino",
+        "precio": "Preguntar camarero",
+        "imagen": "https://productimages.etrusted.com/products/prt-09e6f453-d261-4074-b861-0466a1e2a202/25/original.jpg"
+      },
+      {
+        "nombre": "Agua",
+        "precio": "1.5€",
+        "imagen": "https://distribucionesricardobenito.com/wp-content/uploads/SOLAN-RET-150cl.jpg"
+      }
+    ]
+  }
+  

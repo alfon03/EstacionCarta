@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link");
 
@@ -43,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const goToTopButton = document.getElementById("goToTop");
 
@@ -54,4 +52,44 @@ document.addEventListener("DOMContentLoaded", () => {
       goToTopButton.style.display = "none"; // Oculta el botón
     }
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Inicializar tooltips de Bootstrap
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+});
+
+AOS.init(); // Inicializar AOS para animaciones de scroll
+
+// Obtener elementos
+const sidebar = document.getElementById("sidebar");
+const closeSidebarButton = document.getElementById("closeSidebar"); // Botón de la 'X'
+const openSidebarButton = document.getElementById("hamburger"); // Botón de hamburguesa para abrir el sidebar
+
+// Toggle sidebar visibility on hamburger click (ya lo tienes)
+openSidebarButton.addEventListener("click", function () {
+  sidebar.classList.toggle("active");
+  document.getElementById("navbar").classList.toggle("active");
+});
+
+// Cerrar el sidebar cuando se haga clic en la 'X'
+closeSidebarButton.addEventListener("click", function () {
+  sidebar.classList.remove("active");
+  document.getElementById("navbar").classList.remove("active");
+});
+
+// Cerrar el sidebar al hacer clic fuera de él
+document.addEventListener("click", function (event) {
+  if (
+    !sidebar.contains(event.target) &&
+    !openSidebarButton.contains(event.target)
+  ) {
+    sidebar.classList.remove("active");
+    document.getElementById("navbar").classList.remove("active");
+  }
 });

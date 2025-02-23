@@ -14,42 +14,27 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: var(--antiflash-white);
 }
 
-header {
-  background-color: var(--onyx);
-}
-
-header .navbar {
-  background-color: var(--onyx);
-}
-
-header .navbar-brand span {
-  font-size: 1.5rem;
+/* Carrusel */
+.carousel-caption h5 {
+  font-size: 2rem;
   font-weight: bold;
   color: var(--seasalt);
 }
 
-header .nav-link {
+.carousel-caption p {
+  font-size: 1.25rem;
   color: var(--seasalt);
 }
 
-header .nav-link:hover {
-  color: var(--old-gold);
-}
-
-.carousel-caption h5 {
-  font-size: 2rem;
-}
-
-.carousel-caption p {
-  font-size: 1.25rem;
-}
-
+/* Grid container */
 .grid-container {
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
 }
 
 .grid-container img {
@@ -66,6 +51,7 @@ header .nav-link:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Menú de items */
 .menu-item img {
   width: 100%;
   height: 300px;
@@ -75,6 +61,7 @@ header .nav-link:hover {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Modal de imagen */
 .image-modal {
   display: none;
   position: fixed;
@@ -109,21 +96,30 @@ header .nav-link:hover {
   color: var(--old-gold);
 }
 
+/* Footer */
 footer {
   background-color: var(--onyx);
   color: var(--seasalt);
   text-align: center;
+  padding: 20px;
 }
 
 footer p {
   margin: 0;
 }
 
+/* Logo */
 .logo {
   width: 50px;
   height: auto;
+  transition: transform 0.3s;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   .logo {
     width: 30px;
@@ -135,10 +131,12 @@ footer p {
   }
 }
 
+/* Botón primario */
 .btn-primary {
   background-color: var(--outer-space);
   color: var(--seasalt);
   border-color: var(--eerie-black);
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .btn-primary:hover {
@@ -146,6 +144,7 @@ footer p {
   border-color: var(--old-gold);
 }
 
+/* Enlaces de navegación */
 .nav-link {
   color: #000;
   transition: background-color 0.3s, color 0.3s;
@@ -155,11 +154,13 @@ footer p {
   color: var(--old-gold);
 }
 
+/* Estilo para el enlace activo */
 #active {
   background-color: var(--eerie-black);
   color: white;
 }
 
+/* Botón "ir al principio" */
 #goToTop {
   position: fixed;
   bottom: 20px;
@@ -181,8 +182,76 @@ footer p {
 
 #goToTop:hover {
   background-color: var(--old-gold);
+  opacity: 0.8;
 }
 
+/* Estilo de reservas */
 #reservas {
   background-color: var(--slate-gray);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+/* Tooltips */
+.tooltip-inner {
+  background-color: #5e5e5e;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  position: relative; /* Asegura que el tooltip se posicione correctamente */
+  z-index: 1050;
+}
+
+/* Las flechas de los tooltips */
+.tooltip-arrow {
+  border-top-color: #5e5e5e;
+}
+
+/* Posicionamiento correcto de las flechas */
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #5e5e5e;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #5e5e5e;
+}
+
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: #5e5e5e;
+}
+
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: #5e5e5e;
+}
+
+/* Alineación y espaciado de los tooltips según el tipo de placement */
+.tooltip.bs-tooltip-top {
+  margin-bottom: 10px; /* Espacio entre el tooltip y el elemento */
+  transform: translateX(-50%) translateY(-100%); /* Centra y mueve hacia abajo */
+}
+
+.tooltip.bs-tooltip-bottom {
+  margin-top: 10px; /* Espacio entre el tooltip y el elemento */
+  transform: translateX(-50%) translateY(100%); /* Centra y mueve hacia abajo */
+}
+
+.tooltip.bs-tooltip-left {
+  margin-right: 10px; /* Espacio entre el tooltip y el elemento */
+  transform: translateX(-100%) translateY(-50%); /* Centra y mueve a la izquierda */
+}
+
+.tooltip.bs-tooltip-right {
+  margin-left: 10px; /* Espacio entre el tooltip y el elemento */
+  transform: translateX(100%) translateY(-50%); /* Centra y mueve a la derecha */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .tooltip-inner {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
 }

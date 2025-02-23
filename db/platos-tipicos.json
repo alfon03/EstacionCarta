@@ -1,0 +1,22 @@
+{
+    "platos": [
+      {
+        "nombre": "Ensaladilla",
+        "imagen": "../img/platos/Ensaladilla.jpg"
+      },
+      {
+        "nombre": "Espinacas",
+        "imagen": "../img/platos/espinacas.jpg"
+      },
+      {
+        "nombre": "Patatas Aloe",
+        "imagen": "../img/platos/Patatas aloe.jpg"
+      },
+      {
+        "nombre": "Salchichón",
+        "imagen": "../img/platos/Salchichon.jpg"
+      }
+     
+    ]
+  }
+  

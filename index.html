@@ -6,20 +6,18 @@
     <title>Bar Restaurante Estación</title>
     <meta
       name="description"
-      content="Ven a disfrutar de los mejores platos y un ambiente único en Bar Restaurante La Estación. Ubicado al lado de la estacion."
+      content="Ven a disfrutar de los mejores platos y un ambiente único en Bar Restaurante La Estación. Ubicado al lado de la estación."
     />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <!-- Iconos de Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="shortcut icon" href="./img/Logo/logo.png" type="image/x-icon" />
@@ -27,56 +25,163 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
+    <!-- AOS para animaciones de scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="assets/style/nav.css" />
   </head>
   <body id="top">
     <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-prussian-blue">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="./index.html">
-            <img
-              src="./img/Logo/logo.png"
-              alt="Logo"
-              class="logo img-fluid me-2"
-            />
-            <span class="d-none d-lg-inline">Bar Restaurante Estación</span>
-            <span class="d-lg-none">La Estación</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="./">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./menu/">Carta</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./platos/">Platos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reservas">Reservas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="logo-container">
+        <img src="./img/Logo/logo.png" alt="Logo" class="logo" />
+        <span class="brand-name">Bar Restaurante Estación</span>
+        <span class="brand-name-mobile">La Estación</span>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Menú"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Abrir menú"
+        >
+          &#9776;
+        </button>
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li>
+            <a
+              href="./"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Ir a la página de inicio"
+            >
+              <span class="material-symbols-outlined">home</span> Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="./menu/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Ver la carta"
+            >
+              <span class="material-symbols-outlined">menu_book</span> Carta
+            </a>
+          </li>
+          <li>
+            <a
+              href="./platos/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Explorar los platos"
+            >
+              <span class="material-symbols-outlined">restaurant</span> Platos
+            </a>
+          </li>
+          <li>
+            <a
+              href="#reservas"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Realizar una reserva"
+            >
+              <span class="material-symbols-outlined">calendar_today</span>
+              Reservas
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Contacto"
+            >
+              <span class="material-symbols-outlined">email</span> Contacto
+            </a>
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Ver reseñas"
+            >
+              <span class="material-symbols-outlined">star</span> Reseñas
+            </a>
+          </li>
+        </ul>
       </nav>
+      <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="closeSidebar">&times;</button>
+        <!-- Botón de cierre -->
+        <ul>
+          <li>
+            <a
+              href="./"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Ir a la página de inicio"
+            >
+              <span class="material-symbols-outlined">home</span> Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="./menu/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Ver la carta"
+            >
+              <span class="material-symbols-outlined">menu_book</span> Carta
+            </a>
+          </li>
+          <li>
+            <a
+              href="./platos/"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Explorar los platos"
+            >
+              <span class="material-symbols-outlined">restaurant</span> Platos
+            </a>
+          </li>
+          <li>
+            <a
+              href="#reservas"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Realizar una reserva"
+            >
+              <span class="material-symbols-outlined">calendar_today</span>
+              Reservas
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Contacto"
+            >
+              <span class="material-symbols-outlined">email</span> Contacto
+            </a>
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Ver reseñas"
+            >
+              <span class="material-symbols-outlined">star</span> Reseñas
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Carrusel -->
@@ -90,18 +195,21 @@
             class="active"
             aria-current="true"
             aria-label="Slide 1"
+            title="Deslizar a la primera imagen"
           ></button>
           <button
             type="button"
             data-bs-target="#mainCarousel"
             data-bs-slide-to="1"
             aria-label="Slide 2"
+            title="Deslizar a la segunda imagen"
           ></button>
           <button
             type="button"
             data-bs-target="#mainCarousel"
             data-bs-slide-to="2"
             aria-label="Slide 3"
+            title="Deslizar a la tercera imagen"
           ></button>
         </div>
         <div class="carousel-inner">
@@ -144,6 +252,7 @@
           type="button"
           data-bs-target="#mainCarousel"
           data-bs-slide="prev"
+          title="Imagen anterior"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
@@ -153,6 +262,7 @@
           type="button"
           data-bs-target="#mainCarousel"
           data-bs-slide="next"
+          title="Imagen siguiente"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Siguiente</span>
@@ -161,22 +271,12 @@
     </section>
 
     <!-- Nuestros Platos Típicos -->
-    <section id="typical-dishes" class="py-5">
+    <section id="typical-dishes" class="py-5" data-aos="fade-up">
       <div class="container">
         <h2 class="text-center mb-5">Nuestros Platos Típicos</h2>
         <div class="grid-container">
-          <img src="./img/platos/Ensaladilla.jpg" alt="Plato típico 1" />
-          <img src="./img/platos/espinacas.jpg" alt="Plato típico 2" />
-          <img src="./img/platos/Patatas aloe.jpg" alt="Plato típico 3" />
-          <img src="./img/platos/Salchichon.jpg" alt="Plato típico 4" />
-          <img src="./img/platos/pimientos.jpg" alt="Plato típico 5" />
+          <!-- Las imágenes se cargarán dinámicamente aquí -->
         </div>
-      </div>
-
-      <!-- Modal para imágenes -->
-      <div class="image-modal" id="imageModal">
-        <span class="close-modal">&times;</span>
-        <img id="modalImage" src="" alt="Imagen ampliada" />
       </div>
     </section>
 
@@ -191,8 +291,12 @@
           class="btn btn-primary"
           data-bs-toggle="modal"
           data-bs-target="#reservasModal"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Abrir opciones de reserva"
         >
-          <i class="fas fa-calendar-alt"></i> Reservar
+          <span class="material-symbols-outlined -outlined">event</span>
+          Reservar
         </button>
       </div>
 
@@ -215,20 +319,36 @@
                 class="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Cerrar modal"
               ></button>
             </div>
             <div class="modal-body text-center">
               <p>Elige una opción para realizar tu reserva:</p>
               <div class="d-grid gap-3">
-                <a href="tel:+34686114172" class="btn btn-success">
-                  <i class="fas fa-phone-alt"></i> Reservar por Teléfono
+                <a
+                  href="tel:+34686114172"
+                  class="btn btn-success"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Reservar por teléfono"
+                >
+                  <span class="material-symbols-outlined -outlined">phone</span>
+                  Reservar por Teléfono
                 </a>
                 <a
                   href="https://wa.me/34686114172"
                   target="_blank"
                   class="btn btn-primary"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Reservar por WhatsApp"
                 >
-                  <i class="fab fa-whatsapp"></i> Reservar por WhatsApp
+                  <span class="material-symbols-outlined -outlined"
+                    >whatsapp</span
+                  >
+                  Reservar por WhatsApp
                 </a>
               </div>
             </div>
@@ -237,6 +357,27 @@
       </div>
     </section>
 
+    <!-- Sección de Reseñas de Google -->
+    <section id="reviews" class="py-5" data-aos="fade-up">
+      <div
+        class="elfsight-app-14e311ff-9cd1-460c-9544-4f4d0a8ece5a"
+        data-elfsight-app-lazy
+      ></div>
+
+      <div class="d-flex justify-content-center">
+        <a
+          href="https://www.google.com/search?sca_esv=f4883a601af9ab8d&rlz=1C1FKPE_enES1143ES1143&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzX150eADieJgLhlZSmTm7sogLrE7ru0jadCaFYq73uDyxu2AI5MgGhIpNrU9PA9tPbtMZrJbjR1QySj4PpeIUF80Bt295s7HS1l9iFwl4Yy_3pTtDA%3D%3D&q=Bar+Restaurante+La+Estaci%C3%B3n+Rese%C3%B1as&sa=X&ved=2ahUKEwiwq5iE-diLAxV_TaQEHRMzCvAQ0bkNegQIJxAE&biw=1366&bih=633&dpr=1#cobssid=s"
+          class="btn btn-primary mt-4"
+          target="_blank"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Deja una reseña"
+        >
+          <span class="material-symbols-outlined -outlined">rate_review</span>
+          Deja una reseña
+        </a>
+      </div>
+    </section>
     <!-- Sección de Contacto -->
     <section id="contact" class="py-5">
       <div class="container">
@@ -298,9 +439,17 @@
     </section>
 
     <!-- Subir arriba -->
-
-    <a href="#top" id="goToTop" class="btn btn-primary" style="display: none"
-      ><span class="material-symbols-outlined"> arrow_upward </span></a
+    <a
+      href="#top"
+      id="goToTop"
+      class="btn btn-primary"
+      style="display: none"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Subir al inicio"
+      ><span class="material-symbols-outlined -outlined">
+        arrow_upward
+      </span></a
     >
 
     <!-- Footer -->
@@ -309,11 +458,23 @@
         <p class="mb-0">&copy; 2024 Bar Restaurante Estación</p>
       </div>
     </footer>
+
     <!-- Bootstrap JS Bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
-    <script src="./assets/script/script.js"></script>
+
+    <!-- AOS JS para animaciones -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Elfsight Google Reviews -->
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      async
+    ></script>
+
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/platos-tipicos.js"></script>
   </body>
 </html>
