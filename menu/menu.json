@@ -21,11 +21,48 @@
         "imagen": "../img/platos/Ensaladilla.jpg"
       }
     ],
+    "para-seguir-picando": [
+      {
+        "nombre": "Pan Bao (Pulled Pork, Costilla, Carrillada, Rabo de toro)",
+        "precio": "T: 4€",
+        "imagen": "../img/platos/pan bao.jpg"
+      },
+      {
+        "nombre": "Brioche de Pringa Casera",
+        "precio": "T: 4€",
+        "imagen": "../img/platos/BRIOCHE DE PRINga.jpg"
+      },
+      {
+        "nombre": "Lomo entre pan y pan",
+        "precio": "T: 4€",
+        "imagen": "../img/platos/.jpg"
+      },
+      {
+        "nombre": "Mini Perrito Gratinado",
+        "precio": "T: 4€",
+        "imagen": "../img/platos/mini perrito.jpg"
+      },
+      {
+        "nombre": "Croqueton",
+        "precio": "T: 3,5€",
+        "imagen": "../img/platos/croqueton.jpg"
+      },
+      {
+        "nombre": "Flamenquin de carrillada con queso",
+        "precio": "T: 4€",
+        "imagen": "../img/platos/.jpg"
+      },
+      {
+        "nombre": "Croissant con Mozzarella y pesto",
+        "precio": "T: 5€",
+        "imagen": "../img/platos/croissant.jpg"
+      }
+    ],
     "guisos": [
       {
         "nombre": "De carne con tomate",
         "precio": "T: 4€ | 1/2: 8€",
-        "imagen": "../img/menu/carne-tomate.jpg"
+        "imagen": "../img/platos/carne con tomate.jpg"
       },
       {
         "nombre": "De albóndigas con mojo picón",
@@ -35,17 +72,12 @@
       {
         "nombre": "De costilla macerada 'a la antigua'",
         "precio": "T: 4€ | 1/2: 8€",
-        "imagen": "../img/menu/costilla-antigua.jpg"
+        "imagen": "../img/platos/costilla.jpg"
       },
       {
         "nombre": "De carrillada al oloroso",
         "precio": "T: 4€ | 1/2: 8€",
         "imagen": "../img/menu/carrillada-oloroso.jpg"
-      },
-      {
-        "nombre": "De merluza con pimientos morrones",
-        "precio": "T: 4€ | 1/2: 8€",
-        "imagen": "../img/menu/merluza-pimientos.jpg"
       },
       {
         "nombre": "De espinaca con garbanzos",
@@ -67,7 +99,17 @@
       {
         "nombre": "Carmela",
         "precio": "Postre: 4.5€",
-        "imagen": "../img/menu/carmela.jpg"
+        "imagen": "../img/platos/carmela.jpg"
+      },
+      {
+        "nombre": "Torrija",
+        "precio": "Postre: 4.5€",
+        "imagen": "../img/platos/torrija.jpg"
+      },
+      {
+        "nombre": "Carmela de Nutella",
+        "precio": "Postre: 4.5€",
+        "imagen": "../img/platos/carmela NUTELLA.jpg"
       }
     ],
     "bebidas": [
@@ -103,8 +145,8 @@
       },
       {
         "nombre": "Agua",
-        "precio": "1.5€",
-        "imagen": "https://distribucionesricardobenito.com/wp-content/uploads/SOLAN-RET-150cl.jpg"
+        "precio": "1.8€",
+        "imagen": "https://www.despensa.es/documents/10180/10736/400485_G.jpg"
       }
     ]
   }

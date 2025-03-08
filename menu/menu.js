@@ -1,4 +1,3 @@
-// Cargar el menú desde el archivo JSON
 fetch("./menu.json")
   .then((response) => {
     if (!response.ok) {
@@ -14,18 +13,20 @@ fetch("./menu.json")
     alert("No se pudo cargar el menú. Intenta nuevamente más tarde.");
   });
 
-// Función para cargar los elementos del menú en la página
 function loadMenuItems(data) {
-  // Llamamos a las secciones del menú
-  const sections = ["para-comenzar", "guisos", "y-para-rematar", "bebidas"];
+  const sections = [
+    "para-comenzar",
+    "para-seguir-picando",
+    "guisos",
+    "y-para-rematar",
+    "bebidas",
+  ];
 
-  // Recorrer las secciones y crear las cards dinámicamente
   sections.forEach((section) => {
     const sectionContainer = document.querySelector(`#${section} .menu-items`);
     const items = data[section];
 
     items.forEach((item) => {
-      // Crear el contenido de la card
       const card = document.createElement("div");
       card.classList.add("col-6", "col-md-6", "col-lg-4", "col-xl-3");
 
@@ -39,16 +40,13 @@ function loadMenuItems(data) {
         </div>
       `;
 
-      // Añadir la card a la sección correspondiente
       sectionContainer.appendChild(card);
     });
   });
 
-  // Inicializar AOS (animaciones de scroll)
   AOS.init();
 }
 
-// Función para abrir la imagen en el modal
 function openImageModal(imageUrl) {
   const modalImage = document.querySelector("#modalImage");
   modalImage.src = imageUrl;

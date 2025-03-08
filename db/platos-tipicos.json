@@ -15,8 +15,11 @@
       {
         "nombre": "Salchichón",
         "imagen": "../img/platos/Salchichon.jpg"
+      },
+      {
+        "nombre": "Tartar Salmón",
+        "imagen": "../img/platos/tartar salmon.jpg"
       }
-     
     ]
   }
   

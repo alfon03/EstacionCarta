@@ -1,0 +1,64 @@
+{
+    "platos": [
+      {
+        "nombre": "Ensaladilla",
+        "imagen": "../img/platos/Ensaladilla.jpg"
+      },
+      {
+        "nombre": "Espinacas",
+        "imagen": "../img/platos/espinacas.jpg"
+      },
+      {
+        "nombre": "Patatas Aloe",
+        "imagen": "../img/platos/Patatas aloe.jpg"
+      },
+      {
+        "nombre": "Salchichón",
+        "imagen": "../img/platos/Salchichon.jpg"
+      },
+      {
+        "nombre": "Tartar Salmón",
+        "imagen": "../img/platos/tartar salmon.jpg"
+      },
+      {
+        "nombre": "Carpaccio Gambón",
+        "imagen": "../img/platos/carpaccio gambon.jpg"
+      },
+      {
+        "nombre": "Torrija",
+        "imagen": "../img/platos/torrija.jpg"
+      },
+      {
+        "nombre": "Tabla de queso (variado)",
+        "imagen": "../img/platos/tabla de queso.jpg"
+      },
+      {
+        "nombre": "Carmela de Nutella",
+        "imagen": "../img/platos/carmela NUTELLA.jpg"
+      },
+      {
+        "nombre": "Provoleta Napolitana",
+        "imagen": "../img/platos/provoleta napolitana.jpg"
+      },
+      {
+        "nombre": "Nigiri",
+        "imagen": "../img/platos/nigiri.jpg"
+      },
+      {
+        "nombre": "Pan bao",
+        "imagen": "../img/platos/pan bao.jpg"
+      },
+      {
+        "nombre": "Croqueton",
+        "imagen": "../img/platos/croqueton.jpg"
+      },
+      {
+        "nombre": "Varios pan bao",
+        "imagen": "../img/platos/carios pan bao.jpg"
+      },
+      {
+        "nombre": "Croissant",
+        "imagen": "../img/platos/croissant.jpg"
+      }
+    ]
+  }
